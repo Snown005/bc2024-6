@@ -83,7 +83,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *                   content:
  *                     type: string
  * 
- * /notes/:note_name:
+ * /notes/good day:
  *   put:
  *     summary: Оновити нотатку
  *     responses:
@@ -101,7 +101,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *                   content:
  *                     type: string
  * 
- * /nootes/:note_name:
+ * /notes/bad day:
  *   delete:
  *     summary: Видалити нотатку
  *     responses:
@@ -119,7 +119,7 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec));
  *                   content:
  *                     type: string
  * 
- * /note/:note_name:
+ * /note/good day:
  *   get:
  *     summary: Отримати нотатку за назвою
  *     responses:
@@ -196,7 +196,7 @@ if(error) res.status(500).send('Помилка обробки даних');
     });
     
 });
-app.delete('/nootes/:note_name', (req, res)=>{
+app.delete('/notes/:note_name', (req, res)=>{
     const filePath=path.join(__dirname, options.cache);
     fs.readFile(filePath, (err,data)=>{
         if(err) return res.status(404).send('Файл не існує');
