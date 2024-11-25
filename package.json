@@ -1,0 +1,24 @@
+{
+  "name": "bc2024-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lab5.js",
+  "scripts": {
+    "start": "node lab5.js",
+    "dev": "nodemon lab5.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
